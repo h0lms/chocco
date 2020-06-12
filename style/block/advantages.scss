@@ -18,7 +18,7 @@
     display: flex;
     width: 44px;
     height: 41px;
-    background: url('../../img/icons/naturally.png') center center no-repeat;
+    background: url('../img/icons/naturally.png') center center no-repeat;
   }
 
   &--delivery:before {
@@ -28,7 +28,7 @@
     display: flex;
     width: 50px;
     height: 40px;
-    background: url('../../img/icons/delivery.png') center center no-repeat;
+    background: url('../img/icons/delivery.png') center center no-repeat;
   }
 
   &--beauty:before {
@@ -38,6 +38,6 @@
     display: flex;
     width: 42px;
     height: 42px;
-    background: url('../../img/icons/beauty.png') center center no-repeat;
+    background: url('../img/icons/beauty.png') center center no-repeat;
   }
 }
