@@ -1,0 +1,20 @@
+.contacts {
+  font-style: normal;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 11px;
+    margin-right: 5px;
+    background: url('../../img/phone.png') center center no-repeat;
+  }
+}

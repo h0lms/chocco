@@ -1,0 +1,18 @@
+@mixin button {
+  font-size: 19px;
+  padding: 17px 31px;
+  border-radius: 2em;
+  display: inline-flex;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn {
+  @include button;
+}
+
+.btn--wite {
+  color: #365a49;
+  background-color: #fff;
+}

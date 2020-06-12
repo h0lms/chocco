@@ -1,0 +1,356 @@
+@import './layout/normalize.css';
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  font: 18px/1.42 "alegreya", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #666666;
+  height: 100%;
+  position: relative;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.wrapper {
+  min-height: 100%;
+  min-width: 960px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "alegreya";
+  src: url("../../fonts/alegreyasans-bold-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("../../fonts/alegreyasans-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-bolditalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("../../fonts/alegreyasans-extrabold-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-extrabold-webfont.woff") format("woff");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("../../fonts/alegreyasans-extrabolditalic-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-extrabolditalic-webfont.woff") format("woff");
+  font-weight: bolder;
+  font-style: italic;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("../../fonts/alegreyasans-italic-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("../../fonts/alegreyasans-light-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-light-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("../../fonts/alegreyasans-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-lightitalic-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: italic;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("../../fonts/alegreyasans-medium-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("../../fonts/alegreyasans-mediumitalic-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-mediumitalic-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("../../fonts/alegreyasans-regular-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.hero {
+  background: url("../../img/leaf.png") right bottom no-repeat;
+  background-color: #61c4d9;
+  color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 45px;
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+}
+.hero::before {
+  content: url("../../img/decor/leaf-2.png");
+  position: absolute;
+  left: 2%;
+  bottom: -57px;
+}
+.hero::after {
+  content: url("../../img/decor/berries-1.png");
+  position: absolute;
+  right: 0;
+  bottom: -54px;
+}
+
+.hero__block {
+  width: 43%;
+}
+
+.hero__title {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero__motto {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.hero--container {
+  background: url("../../img/bars.png") right center/50% auto no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menu__item {
+  margin-right: 20px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  text-decoration: none;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contacts__phone::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 11px;
+  margin-right: 5px;
+  background: url("../../img/phone.png") center center no-repeat;
+}
+
+.btn {
+  font-size: 19px;
+  padding: 17px 31px;
+  border-radius: 2em;
+  display: inline-flex;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn--wite {
+  color: #365a49;
+  background-color: #fff;
+}
+
+.advantages {
+  display: flex;
+  width: 43%;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 44px;
+}
+.advantages__item--naturally:before {
+  margin-right: 5px;
+  flex-shrink: 0;
+  content: "";
+  display: flex;
+  width: 44px;
+  height: 41px;
+  background: url("../../img/icons/naturally.png") center center no-repeat;
+}
+.advantages__item--delivery:before {
+  margin-right: 5px;
+  flex-shrink: 0;
+  content: "";
+  display: flex;
+  width: 50px;
+  height: 40px;
+  background: url("../../img/icons/delivery.png") center center no-repeat;
+}
+.advantages__item--beauty:before {
+  margin-right: 5px;
+  flex-shrink: 0;
+  content: "";
+  display: flex;
+  width: 42px;
+  height: 42px;
+  background: url("../../img/icons/beauty.png") center center no-repeat;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__title {
+  font-size: 48px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.headline__title {
+  margin-bottom: 25px;
+}
+
+.headline__subtitle {
+  text-align: center;
+  max-width: 465px;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefit__image {
+  width: 125px;
+  height: 125px;
+  display: flex;
+  border-radius: 50%;
+  background-color: #f2f5f4;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.benefit__icon {
+  width: 60px;
+}
+
+.benefit__title {
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.1;
+  color: #000;
+  margin-bottom: 22px;
+}
+
+.benefit__text {
+  text-align: center;
+}
