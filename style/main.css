@@ -47,6 +47,7 @@ p {
 .container {
   margin: 0 auto;
   width: 940px;
+  position: relative;
 }
 
 .wrapper {
@@ -304,20 +305,42 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-bottom: 55px;
+  text-align: center;
 }
 
 .headline__title {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .headline__subtitle {
-  text-align: center;
-  max-width: 465px;
+  padding: 0 26%;
 }
 
 .benefits {
   display: flex;
   justify-content: space-between;
+}
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+}
+.benefits__item:first-child {
+  padding-left: 0;
+}
+.benefits__item:last-child {
+  padding-right: 0;
+}
+.benefits__item:last-child::before {
+  display: none;
+}
+.benefits__item::before {
+  content: url("../img/decor/separator.png");
+  position: absolute;
+  right: 0;
+  top: 30px;
+  transform: translateX(50%);
 }
 
 .benefit {
@@ -328,18 +351,19 @@ footer {
 }
 
 .benefit__image {
-  width: 125px;
-  height: 125px;
+  width: 126px;
+  height: 126px;
   display: flex;
   border-radius: 50%;
   background-color: #f2f5f4;
   align-items: center;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .benefit__icon {
-  width: 60px;
+  width: 75px;
+  height: 69px;
 }
 
 .benefit__title {
@@ -353,4 +377,124 @@ footer {
 
 .benefit__text {
   text-align: center;
+}
+
+.benefits-section {
+  background: url("../img/decor/leaf-pattern.png") left top 58% no-repeat;
+  position: relative;
+}
+.benefits-section::before {
+  content: url(./../img/decor/raspberry.png);
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+}
+
+.review {
+  display: flex;
+  padding: 50px 37px 34px;
+  background: url("../img/decor/bg_black.png") right top no-repeat;
+  background-color: #f8faf9;
+}
+
+.review__avatar {
+  width: 254px;
+  height: 260px;
+  margin-right: 20px;
+}
+
+.review__photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.review__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 8px;
+  padding-right: 9%;
+}
+
+.review__title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 18px;
+}
+
+.review__text {
+  margin-bottom: 20px;
+}
+
+.review__author {
+  font-weight: 500;
+  color: #000;
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews__content {
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.reviews__content::before {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -65px;
+}
+
+.interactive-avatar {
+  width: 80px;
+  height: 80px;
+  border: solid 6px transparent;
+  background-color: #eeeeee;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+.interactive-avatar--active, .interactive-avatar:hover {
+  border-color: #365a49;
+}
+
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.interactive-avatar__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-title {
+  margin-bottom: 35px;
+}
+
+.reviews-section {
+  background: url("../img/decor/strawberry.png") right 14px top 36px no-repeat;
+}
+.reviews-section::before {
+  content: url(./../img/decor/berries-leaf.png);
+  position: absolute;
+  bottom: -164px;
+  left: 0;
 }

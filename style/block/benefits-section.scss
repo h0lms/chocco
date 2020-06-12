@@ -1,0 +1,11 @@
+.benefits-section {
+  background: url('../img/decor/leaf-pattern.png') left top 58% no-repeat;
+  position: relative;
+  
+  &::before {
+    content: url(./../img/decor/raspberry.png);
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+  }
+}

@@ -1,0 +1,42 @@
+.review {
+  display: flex;
+  padding: 50px 37px 34px;
+  background: url('../img/decor/bg_black.png') right top no-repeat;
+  background-color: #f8faf9;
+}
+
+.review__avatar {
+  width: 254px;
+  height: 260px;
+  margin-right: 20px;
+}
+
+.review__photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.review__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 8px;
+  padding-right: 9%;
+}
+
+.review__title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 18px;
+}
+
+.review__text {
+  margin-bottom: 20px;
+}
+
+.review__author {
+  font-weight: 500;
+  color: #000;
+}
