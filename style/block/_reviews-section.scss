@@ -1,7 +1,8 @@
 .reviews-section {
   background: url('../img/decor/strawberry.png') right 14px top 36px no-repeat;
+  position: relative;
   &::before {
-    content: url(./../img/decor/berries-leaf.png);
+    content: url(../img/decor/berries-leaf.png);
     position: absolute;
     bottom: -164px;
     left: 0;

@@ -491,10 +491,66 @@ footer {
 
 .reviews-section {
   background: url("../img/decor/strawberry.png") right 14px top 36px no-repeat;
+  position: relative;
 }
 .reviews-section::before {
-  content: url(./../img/decor/berries-leaf.png);
+  content: url(../img/decor/berries-leaf.png);
   position: absolute;
   bottom: -164px;
   left: 0;
+}
+
+.order-section {
+  background: url("../img/decor/blueberries.png") left 20px bottom 83px no-repeat, url("../img/decor/leaf-order.png") right 3px bottom 81px no-repeat, url("../img/decor/bg_order.jpg") 100%/cover no-repeat;
+  background-color: #d2ddd9;
+}
+.order-section .section__title {
+  color: #365a49;
+}
+
+.form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 20px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.form__block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__title {
+  color: #365a49;
+  margin-bottom: 5px;
+}
+
+.form_input {
+  padding: 18px 11px;
+  border: 3px solid transparent;
+  width: 100%;
+  color: #000;
+}
+.form_input:focus {
+  border-color: #dee2bd;
+  outline: none;
+}
+.form_input--textarea {
+  resize: none;
+  height: 180px;
 }
