@@ -1,5 +1,5 @@
 .hero {
-  background: url("../../img/leaf.png") right bottom no-repeat;
+  background: url("../img/leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
   color: #ffffff;
   padding-top: 24px;
@@ -9,14 +9,14 @@
   position: relative;
 
   &::before {
-    content: url("../../img/decor/leaf-2.png");
+    content: url("../img/decor/leaf-2.png");
     position: absolute;
     left: 2%;
     bottom: -57px;
   }
 
   &::after {
-    content: url("../../img/decor/berries-1.png");
+    content: url("../img/decor/berries-1.png");
     position: absolute;
     right: 0;
     bottom: -54px;
@@ -41,7 +41,7 @@
 }
 
 .hero--container {
-  background: url("../../img/bars.png") right center / 50% auto no-repeat;
+  background: url("../img/bars.png") right center / 50% auto no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
