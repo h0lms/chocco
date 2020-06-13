@@ -1,6 +1,9 @@
 $containerWidtgh: 940px;
 $baseFontSize: 18px;
 
+// z-index
+$z-fixed-menu: 100;
+
 // normalize
 
 @import './layout/normalize.css';
@@ -28,3 +31,4 @@ $baseFontSize: 18px;
 @import './block/form';
 @import './block/order-title';
 @import './block/radio';
+@import './block/fixed-menu';
