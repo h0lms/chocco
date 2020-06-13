@@ -1,4 +1,4 @@
-@mixin button {
+.btn {
   font-size: 19px;
   padding: 17px 31px;
   border-radius: 2em;
@@ -6,13 +6,37 @@
   font-weight: bolder;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-.btn {
-  @include button;
-}
+  &--wite {
+    color: #365a49;
+    background-color: #fff;
 
-.btn--wite {
-  color: #365a49;
-  background-color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: #365a49;
+    }
+  }
+
+  &--green {
+    color: #fff;
+    background-color: #365a49;
+
+    &:hover {
+      color: #365a49;
+      background-color: #fff;
+    }
+  }
+  
+  &--reset {
+    border: none;
+    background: none;
+    font-size: 18px;
+    text-transform: none;
+    color: #000;
+    font-weight: normal;
+
+    &:hover {
+      color: #365a49;
+    }
+  }
 }

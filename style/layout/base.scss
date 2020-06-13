@@ -44,6 +44,10 @@ p {
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   width: $containerWidtgh;

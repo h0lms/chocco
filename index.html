@@ -144,7 +144,7 @@
 
       <section class="section order-section">
         <div class="container">
-          <h2 class="section__title">Закажите доставку</h2>
+          <h2 class="section__title order-title">Закажите доставку</h2>
 
           <form class="form">
             <div class="form__col">
@@ -195,8 +195,35 @@
                   <textarea class="form_input form_input--textarea"></textarea>
                 </label>
               </div>
+              
+              <div class="form__controls">
+                <label class="radio">
+                  <input type="radio" name="payment" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Потребуется сдача</div>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="payment" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Оплата по карте</div>
+                </label>
+              </div>
+
+              <div class="form__controls form__commetn">
+                <label class="radio radio--checkbox">
+                  <input type="checkbox" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Не перезванивать</div>
+                </label>
+              </div>
+
+              <div class="form__buttons">
+                <button class="btn btn--green" type="submit">Заказать</button>
+                <button class="btn btn--reset" type="reset">Очистить</button>
+              </div>
 
             </div>
+
           </form>
         </div>
       </section>

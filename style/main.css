@@ -44,6 +44,10 @@ p {
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   width: 940px;
@@ -234,10 +238,32 @@ footer {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 .btn--wite {
   color: #365a49;
   background-color: #fff;
+}
+.btn--wite:hover {
+  color: #fff;
+  background-color: #365a49;
+}
+.btn--green {
+  color: #fff;
+  background-color: #365a49;
+}
+.btn--green:hover {
+  color: #365a49;
+  background-color: #fff;
+}
+.btn--reset {
+  border: none;
+  background: none;
+  font-size: 18px;
+  text-transform: none;
+  color: #000;
+  font-weight: normal;
+}
+.btn--reset:hover {
+  color: #365a49;
 }
 
 .advantages {
@@ -503,8 +529,6 @@ footer {
 .order-section {
   background: url("../img/decor/blueberries.png") left 20px bottom 83px no-repeat, url("../img/decor/leaf-order.png") right 3px bottom 81px no-repeat, url("../img/decor/bg_order.jpg") 100%/cover no-repeat;
   background-color: #d2ddd9;
-}
-.order-section .section__title {
   color: #365a49;
 }
 
@@ -537,11 +561,11 @@ footer {
 
 .form__title {
   color: #365a49;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .form_input {
-  padding: 18px 11px;
+  padding: 15px 11px;
   border: 3px solid transparent;
   width: 100%;
   color: #000;
@@ -553,4 +577,75 @@ footer {
 .form_input--textarea {
   resize: none;
   height: 180px;
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.form__buttons ~ .form__controls {
+  margin-bottom: 30px;
+}
+
+.form__commetn {
+  margin-bottom: 40px;
+}
+
+.form__buttons {
+  display: flex;
+}
+
+.order-title {
+  color: inherit;
+  margin-bottom: 48px;
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+  margin-right: 20px;
+}
+.radio:last-child {
+  margin-right: 0;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 0;
+}
+.radio--checkbox .radio__visible::before {
+  background: url("../img/icons/checkmark.svg") center center no-repeat;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+}
+.radio__visible::before {
+  content: "";
+  display: none;
+  width: 14px;
+  height: 14px;
+  background-color: #365a49;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.radio__title {
+  color: #365a49;
+  margin-left: 8px;
 }
