@@ -8,6 +8,10 @@
 .fixed-menu__item {
   margin-bottom: 5px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &--active {
     .fixed-menu__link {
       border-color: #ffffff;
@@ -34,5 +38,9 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    border-color: #ffffff;
   }
 }

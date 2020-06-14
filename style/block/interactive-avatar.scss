@@ -5,20 +5,10 @@
   background-color: #eeeeee;
   overflow: hidden;
   border-radius: 50%;
-  position: relative;
 
   &--active, &:hover {
     border-color: #365a49;
   }
-}
-
-.interactive-avatar__link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
 }
 
 .interactive-avatar__img {

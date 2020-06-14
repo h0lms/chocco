@@ -1,6 +1,5 @@
 .advantages {
   display: flex;
-  width: 43%;
   justify-content: space-between;
 }
 
@@ -9,35 +8,13 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-right: 44px;
+  padding-right: 80px;
 
-  &--naturally:before {
-    margin-right: 5px;
-    flex-shrink: 0;
-    content: "";
-    display: flex;
-    width: 44px;
-    height: 41px;
-    background: url('../img/icons/naturally.png') center center no-repeat;
+  &:last-child {
+    padding-right: 0;
   }
+}
 
-  &--delivery:before {
-    margin-right: 5px;
-    flex-shrink: 0;
-    content: "";
-    display: flex;
-    width: 50px;
-    height: 40px;
-    background: url('../img/icons/delivery.png') center center no-repeat;
-  }
-
-  &--beauty:before {
-    margin-right: 5px;
-    flex-shrink: 0;
-    content: "";
-    display: flex;
-    width: 42px;
-    height: 42px;
-    background: url('../img/icons/beauty.png') center center no-repeat;
-  }
+.advantages__img {
+  margin-right: 8px;
 }

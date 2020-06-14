@@ -1,4 +1,4 @@
-.radio {
+.form__radio {
   display: flex;
   cursor: pointer;
   user-select: none;
@@ -9,7 +9,7 @@
   }
 
   &--checkbox {
-    .radio__visible {
+    .form__radio-visible {
       border-radius: 0;
 
       &::before {
@@ -19,17 +19,17 @@
   }
 }
 
-.radio__elem {
+.form__radio-elem {
   display: none;
 
-  &:checked ~ .radio__visible {
+  &:checked ~ .form__radio-visible {
     &::before {
       display: block;
     }
   }
 }
 
-.radio__visible {
+.form__radio-visible {
   width: 26px;
   height: 26px;
   background-color: #ffffff;
@@ -50,7 +50,7 @@
   }
 }
 
-.radio__title {
+.form__radio-title {
   color: #365a49;
   margin-left: 8px;
 }
