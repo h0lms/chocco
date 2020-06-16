@@ -3,7 +3,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 *, ::after, ::before {
@@ -11,7 +11,9 @@ html {
 }
 
 body {
-  font: 18px/1.42 "alegreya", Helvetica, sans-serif;
+  font-family: "alegreya", Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #666666;
