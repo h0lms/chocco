@@ -5,20 +5,20 @@
 }
 
 .reviews__content {
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
   position: relative;
   overflow: hidden;
 
   &::before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background-color: #fff;
     position: absolute;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 }

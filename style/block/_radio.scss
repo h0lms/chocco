@@ -2,7 +2,7 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 20px;
+  margin-right: rem(20px);
 
   &:last-child {
     margin-right: 0;
@@ -30,8 +30,8 @@
 }
 
 .form__radio-visible {
-  width: 26px;
-  height: 26px;
+  width: rem(26px);
+  height: rem(26px);
   background-color: #ffffff;
   border-radius: 50%;
   position: relative;
@@ -39,8 +39,8 @@
   &::before {
     content: "";
     display: none;
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     background-color: #365a49;
     position: absolute;
     left: 50%;
@@ -52,5 +52,5 @@
 
 .form__radio-title {
   color: #365a49;
-  margin-left: 8px;
+  margin-left: rem(8px);
 }

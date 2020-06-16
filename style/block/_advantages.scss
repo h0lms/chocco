@@ -4,11 +4,11 @@
 }
 
 .advantages__item {
-  font-size: 16px;
+  font-size: rem(16px);
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-right: 80px;
+  padding-right: rem(80px);
 
   &:last-child {
     padding-right: 0;
@@ -16,5 +16,5 @@
 }
 
 .advantages__img {
-  margin-right: 8px;
+  margin-right: rem(8px);
 }

@@ -2,24 +2,24 @@
   background: url("../img/leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
   color: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 45px;
+  padding-top: rem(24px);
+  padding-bottom: rem(45px);
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   position: relative;
 
   &::before {
     content: url("../img/decor/leaf-2.png");
     position: absolute;
     left: 2%;
-    bottom: -57px;
+    bottom: rem(-57px);
   }
 
   &::after {
     content: url("../img/decor/berries-1.png");
     position: absolute;
     right: 0;
-    bottom: -54px;
+    bottom: rem(-54px);
   }
 }
 
@@ -28,14 +28,14 @@
 }
 
 .hero__title {
-  font-size: 48px;
+  font-size: rem(48px);
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
   line-height: 1.1;
 }
 
 .hero__motto {
-  font-size: 18px;
-  margin-bottom: 32px;
+  font-size: rem(18px);
+  margin-bottom: rem(32px);
 }

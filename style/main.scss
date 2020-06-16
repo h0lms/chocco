@@ -1,6 +1,14 @@
 $containerWidtgh: 940px;
 $baseFontSize: 18px;
 
+@function rem($size) {
+  @return $size / $baseFontSize * 1rem;
+}
+
+// .some-block {
+//   font-size: rem(24px);
+// }
+
 // z-index
 $z-fixed-menu: 100;
 

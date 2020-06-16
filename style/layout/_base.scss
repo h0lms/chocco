@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
-  font-size: 18px;
+  font-size: rem(18px);
 }
 
 *, ::after, ::before {
@@ -51,7 +51,7 @@ button {
 
 .container {
   margin: 0 auto;
-  width: $containerWidtgh;
+  width: rem($containerWidtgh);
   position: relative;
 }
 
@@ -65,14 +65,14 @@ button {
 
 .wrapper {
   min-height: 100%;
-  min-width: $containerWidtgh + 20px;
+  min-width: rem($containerWidtgh + 20px);
   overflow: hidden;
   position: relative;
   width: 100%;
 }
 
 .logo {
-  margin-right: 30px;
+  margin-right: rem(30px);
 }
 
 table {

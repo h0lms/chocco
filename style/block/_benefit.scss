@@ -6,28 +6,28 @@
 }
 
 .benefit__image {
-  width: 126px;
-  height: 126px;
+  width: rem(126px);
+  height: rem(126px);
   display: flex;
   border-radius: 50%;
   background-color: #f2f5f4;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: rem(24px);
 }
 
 .benefit__icon {
-  width: 75px;
-  height: 69px;
+  width: rem(75px);
+  height: rem(69px);
 }
 
 .benefit__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: bold;
   text-align: center;
   line-height: 1.1;
   color: #000;
-  margin-bottom: 22px;
+  margin-bottom: rem(22px);
 }
 
 .benefit__text {
