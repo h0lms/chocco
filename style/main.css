@@ -381,6 +381,10 @@ footer {
   margin-bottom: 1.3333333333rem;
 }
 
+.benefit__desc {
+  flex: 1;
+}
+
 .benefit__icon {
   width: 4.1666666667rem;
   height: 3.8333333333rem;
@@ -779,11 +783,12 @@ footer {
 
   .container {
     width: auto;
-    max-width: 38.8888888889rem;
+    max-width: 95%;
   }
 
   .hero {
-    background-position: right top 1.1111111111rem;
+    background-position: right top 2rem;
+    background-size: 150%;
   }
 
   .menu__list,
@@ -826,19 +831,70 @@ footer {
     bottom: 100%;
     margin-bottom: 0.2777777778rem;
   }
+
+  .benefits-section {
+    background-position: left top 13%;
+  }
+
+  .benefit::before {
+    display: none;
+  }
+
+  .headline__subtitle {
+    padding: 0px 17%;
+  }
+
+  .reviews__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review__content {
+    padding-right: 0;
+  }
+
+  .review__content {
+    align-items: center;
+  }
+
+  .review__text {
+    text-align: center;
+  }
 }
 @media (max-width: 480px) {
   .container {
     width: auto;
-    max-width: 25rem;
-  }
-
-  .hero {
-    background-size: 130%;
-    background-position: right top 8.3333333333rem;
   }
 
   .hero__motto {
     padding: 0px 10%;
+  }
+
+  .benefits {
+    flex-direction: column;
+  }
+
+  .benefit {
+    flex-direction: row;
+  }
+
+  .benefit__title {
+    text-align: left;
+  }
+
+  .benefit__text {
+    text-align: left;
+  }
+
+  .benefits-section {
+    background-image: none;
+  }
+  .benefits-section::before {
+    display: none;
+  }
+
+  .benefit__image {
+    margin-right: 0.8333333333rem;
   }
 }
