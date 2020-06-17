@@ -164,11 +164,64 @@ $z-fixed-menu: 100;
     text-align: center;
   }
 
+  // form
+
+  .form {
+    flex-direction: column;
+    margin: 0 20%;
+  }
+
+  .form__col {
+    margin-right: 0;
+    margin-bottom: rem(18px);
+  }
+
+  .form__buttons {
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .form__controls {
+    margin-bottom: rem(12px);
+  }
+
+  .form__commetn {
+    margin-bottom: rem(34px);
+  }
+
+  .form__input {
+    padding: rem(13px) rem(11px) rem(10px);
+    font-size: rem(14px);
+  }
+
+  .order-section {
+    background: url('../img/decor/bg_order.jpg') 100% / cover no-repeat;
+  }
+
+  // map
+
+  .container--map {
+    max-width: 100%;
+  }
+
+  // reviews
+
+  .review__avatar {
+    width: rem(130px);
+    height: rem(132px);
+    margin-right: 0;
+  }
+
 }
 
 @media (max-width: 480px) {
   .container {
     width: auto;
+  }
+
+  // 
+  .hero__title {
+    font-size: rem(40px);
   }
 
   .hero__motto {
@@ -179,6 +232,10 @@ $z-fixed-menu: 100;
 
   .benefits {
     flex-direction: column;
+  }
+
+  .benefits__item {
+    margin-bottom: rem(35px);
   }
 
   .benefit {
@@ -203,6 +260,47 @@ $z-fixed-menu: 100;
 
   .benefit__image {
     margin-right: rem(15px);
+    margin-bottom: 0;
+  }
+
+  // form
+
+  .form {
+    margin: 0;
+  }
+
+  .form__controls {
+    justify-content: center;
+  }
+
+  // reviews
+
+  .review__avatar {
+    width: rem(121px);
+    height: rem(124px);
+  }
+
+  // footer
+
+  .container--footer {
+    flex-direction: column;
+  }
+
+  .footer__block {
+    align-items: center;
+    margin-bottom: rem(15px);
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__address {
+    margin-bottom: 15px;
+  }
+
+  .section__title {
+    font-size: rem(40px);
   }
 
 }
