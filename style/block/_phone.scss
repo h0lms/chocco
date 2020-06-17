@@ -1,0 +1,18 @@
+.phone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: rem(21px);
+  color: #365a49;
+  font-style: normal;
+}
+
+.phone__img {
+  width: rem(12px);
+  height: rem(11px);
+  margin-right: rem(7px);
+}
+
+.phone__number {
+  text-decoration: none;
+}

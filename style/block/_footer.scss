@@ -1,0 +1,17 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__address {
+  font-size: rem(21px);
+  color: #000;
+}

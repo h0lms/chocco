@@ -22,7 +22,7 @@ $z-fixed-menu: 100;
 @import './block/hero';
 @import './block/header';
 @import './block/menu';
-@import './block/contacts';
+@import './block/tel';
 @import './block/btn';
 @import './block/advantages';
 @import './block/section';
@@ -40,3 +40,113 @@ $z-fixed-menu: 100;
 @import './block/order-title';
 @import './block/radio';
 @import './block/fixed-menu';
+@import './block/hamburger';
+@import './block/footer';
+@import './block/map';
+@import './block/social';
+@import './block/phone';
+
+@media (max-width: 768px) {
+  
+  .container--hero {
+    background-image: none;
+  }
+
+  .hero__block--mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: url('../img/decor/tablet-chocco.png');
+      display: block;
+      margin-bottom: rem(20px);
+    }
+  }
+
+  .hero__title {
+    text-align: center;
+    font-size: rem(40px);
+  }
+
+  .hero__motto {
+    text-align: center;
+    padding: 0 25%;
+  }
+
+  .wrapper {
+    min-width: 0;
+  }
+
+  .container {
+    width: auto;
+    max-width: rem(700px);
+  }
+
+  .hero {
+    background-position: right top rem(20px);
+  }
+
+  .menu__list,
+  .tel,
+  .fixed-menu,
+  .hero::before,
+  .hero::after {
+    display: none;
+  }
+
+  .advantages {
+    visibility: hidden;
+  }
+
+  // hamburger
+
+  .hamburger {
+    display: block;
+    width: rem(24px);
+    height: rem(4px);
+    position: relative;
+    background: #ffffff;
+    margin-top: rem(15px);
+    margin-bottom: rem(15px);
+  }
+  
+  .hamburger::after, .hamburger::before {
+    content: "";
+    display: block;
+    width: rem(24px);
+    height: rem(4px);
+    position: absolute;
+    background: #ffffff;
+  }
+  
+  .hamburger::after {
+    top: 100%;
+    margin-top: rem(5px);
+  }
+  
+  .hamburger::before {
+    bottom: 100%;
+    margin-bottom: rem(5px);
+  }
+
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: auto;
+    max-width: rem(450px);
+  }
+
+  .hero {
+    background-size: 130%;
+    background-position: right top rem(150px);
+  }
+
+  .hero__motto {
+    padding: 0px 10%;
+  }
+
+}

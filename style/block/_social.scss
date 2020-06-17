@@ -1,0 +1,22 @@
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: rem(16px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.social__img {
+  width: rem(23px);
+  height: rem(20px);
+}
