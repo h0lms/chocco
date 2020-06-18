@@ -1,11 +1,22 @@
+.menu {
+  margin: 0 rem(30px);
+  padding-top: rem(5px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
 .menu__list {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .menu__item {
-  margin-right: rem(20px);
+  margin-right: rem(15px);
+  margin-bottom: rem(10px);
 
   &:last-child {
     margin-right: 0;
@@ -14,6 +25,7 @@
 
 .menu__link {
   text-decoration: none;
+  white-space: nowrap;
 
   &:hover {
     text-decoration: underline;

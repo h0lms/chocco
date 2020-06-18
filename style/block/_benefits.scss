@@ -21,5 +21,9 @@
     position: absolute;
     right: 0;
     top: rem(60px);
+
+    @include tablets {
+      display: none;
+    }
   }
 }

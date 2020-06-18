@@ -8,6 +8,10 @@
   min-height: rem(650px);
   position: relative;
 
+  @include tablets {
+    background-position: right bottom 88%;
+  }
+
   &::before {
     content: url("../img/decor/leaf-2.png");
     position: absolute;
@@ -21,10 +25,39 @@
     right: 0;
     bottom: rem(-54px);
   }
+
+  &::before, &::after {
+    @include tablets {
+      display: none;
+    }
+  }
+
 }
 
 .hero__block {
   width: 43%;
+
+  @include tablets {
+    width: auto;
+  }
+}
+
+.hero__block--mobile {
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    &::before {
+      content: url('../img/decor/tablet-chocco.png');
+      display: block;
+      margin-bottom: rem(11px);
+    }
+  }
 }
 
 .hero__title {
@@ -38,4 +71,9 @@
 .hero__motto {
   font-size: rem(18px);
   margin-bottom: rem(32px);
+
+  @include tablets {
+    padding: 0 26%;
+    margin-bottom: rem(31px);
+  }
 }

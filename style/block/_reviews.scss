@@ -9,6 +9,17 @@
   position: relative;
   overflow: hidden;
 
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: rem(63px);
+    padding-left: rem(15px);
+    padding-right: rem(15px);
+    margin-bottom: rem(33px);
+  }
+
   &::before {
     content: "";
     display: block;
@@ -19,6 +30,6 @@
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
-    top: rem(-65px);
+    top: rem(-67px);
   }
 }

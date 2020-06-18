@@ -1,7 +1,15 @@
 html {
   box-sizing: border-box;
   height: 100%;
-  font-size: ($baseFontSize / 16px) * 1rem;
+  font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
 }
 
 *, ::after, ::before {
@@ -10,7 +18,6 @@ html {
 
 body {
   font-family: 'alegreya', Helvetica, sans-serif;
-  font-size: rem(18px);
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -53,7 +60,8 @@ button {
 
 .container {
   margin: 0 auto;
-  width: rem($containerWidtgh);
+  width: 95%;
+  max-width: rem($containerWidtgh);
   position: relative;
 }
 
@@ -63,6 +71,10 @@ button {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+
+  @include tablets {
+    background-image: none;
+  }
 }
 
 .container--map {
@@ -79,14 +91,9 @@ button {
 
 .wrapper {
   min-height: 100%;
-  min-width: rem($containerWidtgh + 20px);
   overflow: hidden;
   position: relative;
   width: 100%;
-}
-
-.logo {
-  margin-right: rem(30px);
 }
 
 table {

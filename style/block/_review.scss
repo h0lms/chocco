@@ -9,6 +9,13 @@
   width: rem(254px);
   height: rem(260px);
   margin-right: rem(20px);
+
+  @include tablets {
+    width: rem(141px);
+    height: rem(143px);
+    margin-bottom: rem(22px);
+    margin-right: 0;
+  }
 }
 
 .review__photo {
@@ -23,6 +30,10 @@
   flex: 1;
   padding-top: rem(8px);
   padding-right: 9%;
+
+  @include tablets {
+    padding: 0;
+  }
 }
 
 .review__title {
@@ -33,7 +44,7 @@
 }
 
 .review__text {
-  margin-bottom: rem(20px);
+  margin-bottom: rem(25px);
 }
 
 .review__author {

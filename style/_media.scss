@@ -1,0 +1,183 @@
+@function rem($px) {
+  @return $px / $baseFontSize + 0rem;
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+@media (max-width: 768px) {
+
+  // .hero__title {
+  //   text-align: center;
+  //   font-size: rem(40px);
+  // }
+
+
+  // .wrapper {
+  //   min-width: 0;
+  // }
+
+
+  .fixed-menu {
+    display: none;
+  }
+
+  // reviews
+
+  // .review__content {
+  //   padding-right: 0;
+  // }
+
+  // .review__content {
+  //   align-items: center;
+  // }
+
+  // .review__text {
+  //   text-align: center;
+  // }
+
+  // form
+
+
+  // .form__col {
+  //   margin-bottom: rem(18px);
+  // }
+
+  // .form__buttons {
+  //   margin-right: 0;
+  // }
+
+  // .form__controls {
+  //   margin-bottom: rem(12px);
+  // }
+
+  // .form__commetn {
+  //   margin-bottom: rem(34px);
+  // }
+
+  // .form__input {
+  //   padding: rem(13px) rem(11px) rem(10px);
+
+
+    // font-size: rem(14px);
+  
+
+  // .order-section {
+  //   background: url('../img/decor/bg_order.jpg') 100% / cover no-repeat;
+  // }
+
+  // map
+
+  .container--map {
+    max-width: 100%;
+  }
+
+  // reviews
+
+  .review__avatar {
+    width: rem(130px);
+    height: rem(132px);
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: auto;
+  }
+
+  // 
+  .hero__title {
+    // font-size: rem(40px);
+  }
+
+  .hero__motto {
+    padding: rem(0px) 10%;
+  }
+
+  // benefits
+
+  .benefits {
+    flex-direction: column;
+  }
+
+  .benefits__item {
+    margin-bottom: rem(35px);
+  }
+
+  .benefit {
+    flex-direction: row;
+  }
+
+  .benefit__title {
+    text-align: left;
+  }
+
+  .benefit__text {
+    text-align: left;
+  }
+
+  .benefits-section {
+    background-image: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .benefit__image {
+    margin-right: rem(15px);
+    margin-bottom: 0;
+  }
+
+  // form
+
+  .form {
+    margin: 0;
+  }
+
+  .form__controls {
+    justify-content: center;
+  }
+
+  // reviews
+
+  .review__avatar {
+    width: rem(121px);
+    height: rem(124px);
+  }
+
+  // footer
+
+  .container--footer {
+    flex-direction: column;
+  }
+
+  .footer__block {
+    align-items: center;
+    margin-bottom: rem(15px);
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__address {
+    margin-bottom: rem(15px);
+  }
+
+  .section__title {
+    // font-size: rem(40px);
+  }
+
+}
