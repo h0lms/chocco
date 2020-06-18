@@ -3,16 +3,6 @@
   .fixed-menu {
     display: none;
   }
-
-  .container--map {
-    max-width: 100%;
-  }
-
-  .review__avatar {
-    width: 7.2222222222rem;
-    height: 7.3333333333rem;
-    margin-right: 0;
-  }
 }
 @media (max-width: 480px) {
   .container {
