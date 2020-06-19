@@ -7,6 +7,7 @@ $phones: 480px;
 
 // z-index
 $z-fixed-menu: 100;
+$advantages-item: 10;
 
 // normalize
 @import './layout/normalize.css';
@@ -34,7 +35,6 @@ $z-fixed-menu: 100;
 @import './block/order-section';
 @import './block/form';
 @import './block/order-title';
-@import './block/radio';
 @import './block/fixed-menu';
 @import './block/hamburger';
 @import './block/footer';

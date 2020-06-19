@@ -3,6 +3,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @include phones {
+    flex-direction: row;
+  }
 }
 
 .benefit__image {
@@ -14,10 +18,20 @@
   align-items: center;
   justify-content: center;
   margin-bottom: rem(24px);
+
+  @include phones {
+    margin-bottom: 0;
+    margin-right: rem(20px);
+  }
 }
 
 .benefit__desc {
   flex: 1;
+  text-align: center;
+
+  @include phones {
+    text-align: left;
+  }
 }
 
 .benefit__icon {
@@ -28,12 +42,8 @@
 .benefit__title {
   font-size: rem(27px);
   font-weight: bold;
-  text-align: center;
   line-height: 1.1;
   color: #000;
   margin-bottom: rem(22px);
-}
 
-.benefit__text {
-  text-align: center;
 }

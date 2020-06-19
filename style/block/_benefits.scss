@@ -1,12 +1,21 @@
 .benefits {
   display: flex;
   justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
   flex: 1;
   padding-right: 6%;
   position: relative;
+
+  @include phones {
+    padding: 0;
+    margin-bottom: rem(24px);
+  }
 
   &:last-child {
     padding-right: 0;

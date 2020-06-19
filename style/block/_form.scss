@@ -5,6 +5,10 @@
     flex-direction: column;
     margin: 0 19%;
   }
+
+  @include phones {
+    margin: 0;
+  }
 }
 
 .form__col {
@@ -26,7 +30,7 @@
   margin-bottom: rem(18px);
 
   @include tablets {
-    margin-bottom: 13px;
+    margin-bottom: rem(13px);
   }
 
   &:last-child {
@@ -65,6 +69,11 @@
     font-size: rem(16px);
   }
 
+  @include phones {
+    padding: rem(9px) rem(6px);
+    font-size: rem(16px);
+  }
+
   &:focus {
     border-color: #dee2bd;
     outline: none;
@@ -86,7 +95,11 @@
   margin-bottom: rem(8px);
 
   @include tablets {
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
+  }
+
+  @include phones {
+    justify-content: center;
   }
 
   &:last-child {
@@ -107,6 +120,67 @@
   @include tablets {
     margin-bottom: rem(33px);
   }
+}
+
+.form__radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin-right: rem(20px);
+
+  @include phones {
+    margin-bottom: rem(14px);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--checkbox {
+    .form__radio-visible {
+      border-radius: 0;
+
+      &::before {
+        background: url('../img/icons/checkmark.svg') center center no-repeat;
+      }
+    }
+  }
+}
+
+.form__radio-elem {
+  display: none;
+
+  &:checked ~ .form__radio-visible {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.form__radio-visible {
+  width: rem(26px);
+  height: rem(26px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: none;
+    width: rem(14px);
+    height: rem(14px);
+    background-color: #365a49;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+}
+
+.form__radio-title {
+  color: #365a49;
+  margin-left: rem(8px);
 }
 
 .form__buttons {

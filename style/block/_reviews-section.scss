@@ -1,6 +1,11 @@
 .reviews-section {
   background: url('../img/decor/strawberry.png') right rem(14px) top rem(36px) no-repeat;
   position: relative;
+
+  @include phones {
+    background-position: right rem(-30px) top rem(10px);
+  }
+
   &::before {
     content: url(../img/decor/berries-leaf.png);
     position: absolute;

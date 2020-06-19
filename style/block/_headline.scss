@@ -16,4 +16,8 @@
   @include tablets {
     padding: rem(0px) 17%;
   }
+
+  @include phones {
+    padding: 0rem 4%;
+  }
 }

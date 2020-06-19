@@ -5,6 +5,10 @@
   @include tablets {
     background-position: left top 5%;
   }
+
+  @include phones {
+    background: none;;
+  }
   
   &::before {
     content: url(./../img/decor/raspberry.png);

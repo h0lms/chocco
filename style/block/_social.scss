@@ -19,4 +19,9 @@
 .social__img {
   width: rem(23px);
   height: rem(20px);
+  
+  @include phones {
+    width: rem(26px);
+    height: rem(23px);
+  }
 }

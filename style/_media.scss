@@ -91,7 +91,7 @@
 
 }
 
-@media (max-width: 480px) {
+@media1 (max-width: 480px) {
   .container {
     width: auto;
   }
@@ -101,23 +101,7 @@
     // font-size: rem(40px);
   }
 
-  .hero__motto {
-    padding: rem(0px) 10%;
-  }
-
   // benefits
-
-  .benefits {
-    flex-direction: column;
-  }
-
-  .benefits__item {
-    margin-bottom: rem(35px);
-  }
-
-  .benefit {
-    flex-direction: row;
-  }
 
   .benefit__title {
     text-align: left;
@@ -128,7 +112,7 @@
   }
 
   .benefits-section {
-    background-image: none;
+    background: none;
 
     &::before {
       display: none;

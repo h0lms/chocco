@@ -13,6 +13,7 @@
   align-items: flex-start;
   justify-content: space-between;
   padding-right: rem(80px);
+  z-index: $advantages-item;
 
   &:last-child {
     padding-right: 0;

@@ -9,7 +9,11 @@
   @include tablets {
     width: rem(75px);
     height: rem(75px);
+  }
 
+  @include phones {
+    width: rem(65px);
+    height: rem(65px);
   }
 
   &--active, &:hover {
