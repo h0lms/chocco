@@ -4,7 +4,7 @@
   align-items: flex-start;
 }
 
-.header__tel {
+.tel.header__tel {
   @include tablets {
     display: none;
   }

@@ -10,15 +10,16 @@
   &:last-child {
     margin-right: 0;
   }
-
-  &:hover {
-    opacity: .5;
-  }
 }
 
 .social__img {
   width: rem(23px);
   height: rem(20px);
+  fill: #B3B3B3;
+
+  &:hover {
+    fill: #000000;
+  }
   
   @include phones {
     width: rem(26px);

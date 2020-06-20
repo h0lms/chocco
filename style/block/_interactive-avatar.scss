@@ -1,7 +1,7 @@
 .interactive-avatar {
   width: rem(80px);
   height: rem(80px);
-  border: solid rem(6px) transparent;
+  border: solid 6px transparent;
   background-color: #eeeeee;
   overflow: hidden;
   border-radius: 50%;
@@ -12,8 +12,8 @@
   }
 
   @include phones {
-    width: rem(65px);
-    height: rem(65px);
+    width: rem(69px);
+    height: rem(69px);
   }
 
   &--active, &:hover {

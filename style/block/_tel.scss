@@ -1,5 +1,14 @@
 .tel {
   font-style: normal;
+  display: flex;
+  align-items: center;
+}
+
+.tel__icon {
+  width: 12px;
+  height: 11px;
+  fill: currentColor;
+  margin-right: rem(5px);
 }
 
 .tel__phone {
@@ -9,13 +18,4 @@
   justify-content: flex-end;
   align-items: center;
   white-space: nowrap;
-
-  &::before {
-    content: '';
-    display: block;
-    width: rem(12px);
-    height: rem(11px);
-    margin-right: rem(5px);
-    background: url('../img/phone.png') center center no-repeat;
-  }
 }
