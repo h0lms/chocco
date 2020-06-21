@@ -527,6 +527,9 @@ footer {
     padding: 0;
     margin-bottom: 1.3333333333rem;
   }
+  .benefits__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .benefits__item:last-child {
   padding-right: 0;
@@ -802,6 +805,9 @@ footer {
     margin-right: 0;
     margin-bottom: 0.7777777778rem;
   }
+  .form__col:last-child {
+    margin-bottom: 0;
+  }
 }
 .form__col:last-child {
   margin-right: 0;
@@ -911,7 +917,7 @@ footer {
           user-select: none;
   margin-right: 1.1111111111rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .form__radio {
     margin-bottom: 0.7777777778rem;
   }
@@ -1023,15 +1029,19 @@ footer {
 }
 
 .hamburger {
+  position: absolute;
+  right: 3%;
+  top: 3%;
   flex-direction: column;
   justify-content: space-between;
   width: 24px;
   height: 20px;
   display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
-    display: inline-flex;
+    display: flex;
   }
 }
 

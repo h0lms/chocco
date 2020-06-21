@@ -1,16 +1,16 @@
-// .hamburger {
-//   display: none;
-// }
-
 .hamburger {
+  position: absolute;
+  right: 3%;
+  top: 3%;
   flex-direction: column;
   justify-content: space-between;
   width: 24px;
   height: 20px;
   display: none;
+  cursor: pointer;
   
   @include tablets {
-    display: inline-flex;
+    display: flex;
   }
 }
 
@@ -19,5 +19,4 @@
   background: #ffffff;
   height: 4px;
   border-radius: 10px;
-
 }
