@@ -8,8 +8,8 @@ hamburger.addEventListener("click", e => {
   hamburger.classList.add("hamburger--close");
 
   hamburger.addEventListener("click", i => {
-    menu.classList.remove("menu--mobile");
-    hamburger.classList.remove("hamburger--close");
+    menu.classList.toggle("menu--mobile");
+    hamburger.classList.toggle("hamburger--close");
   })
 
 })
