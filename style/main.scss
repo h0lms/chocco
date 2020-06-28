@@ -8,6 +8,7 @@ $phones: 480px;
 // z-index
 $z-fixed-menu: 100;
 $advantages-item: 10;
+$z-menu--mobile: 200;
 
 // normalize
 @import './layout/normalize.css';
@@ -42,3 +43,4 @@ $advantages-item: 10;
 @import './block/social';
 @import './block/phone';
 @import './block/logo';
+@import './block/close';
