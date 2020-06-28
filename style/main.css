@@ -1080,6 +1080,10 @@ footer {
   border-radius: 10px;
 }
 
+.hamburger--close {
+  z-index: 200;
+  position: fixed;
+}
 .hamburger--close .hamburger__plank:nth-child(1) {
   opacity: 0;
 }

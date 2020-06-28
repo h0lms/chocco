@@ -7,13 +7,9 @@ hamburger.addEventListener("click", e => {
 
   hamburger.classList.add("hamburger--close");
 
-  hamburger.style.position = "fixed";
-  hamburger.style.zIndex = "1000";
-
   hamburger.addEventListener("click", e => {
     menu.classList.remove("menu--mobile");
     hamburger.classList.remove("hamburger--close");
-    hamburger.removeAttribute("style");
   })
 
 })
