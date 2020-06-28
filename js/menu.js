@@ -3,11 +3,11 @@ const hamburger = document.querySelector(".hamburger");
 
 hamburger.addEventListener("click", e => {
   e.preventDefault();
-  menu.classList.add("menu--mobile");
 
+  menu.classList.add("menu--mobile");
   hamburger.classList.add("hamburger--close");
 
-  hamburger.addEventListener("click", e => {
+  hamburger.addEventListener("click", i => {
     menu.classList.remove("menu--mobile");
     hamburger.classList.remove("hamburger--close");
   })
