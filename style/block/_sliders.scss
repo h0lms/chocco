@@ -1,0 +1,39 @@
+.sliders-section {
+  background-color: #f8faf9;
+  position: relative;
+  
+  &::before {
+    content: url('../../img/decor/blueberries_and_leaf.png');
+    position: absolute;
+    right: 0;
+    bottom: -28%;
+  }
+}
+
+.sliders {
+  position: relative;
+}
+
+.sliders__arrow {
+  display: flex;
+  flex-shrink: 0;
+  position: absolute;
+  top: 49%;
+}
+
+.sliders__arrow-img {
+  width: 13px;
+  height: 28px;
+  fill: #151515;;
+}
+
+.sliders__arrow--left {
+  left: -3%;
+  & .sliders__arrow-img {
+    transform: rotate(180deg);
+  }
+}
+
+.sliders__arrow--right {
+  right: -3%;
+}

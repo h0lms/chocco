@@ -13,8 +13,9 @@
   &::before {
     content: url(./../img/decor/raspberry.png);
     position: absolute;
-    bottom: rem(-80px);
+    bottom: -18%;
     left: 0;
+    z-index: $benefits-section-before;
 
     @include tablets {
       display: none;

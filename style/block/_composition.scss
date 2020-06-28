@@ -1,0 +1,31 @@
+.composition {
+  background-color: rgba(255, 255, 255, 0.95);
+  width: rem(270px);
+  border-radius: 5px;
+  border: solid 1px #eeeeee;
+  padding: rem(24px) rem(20px) rem(23px) rem(32px);
+}
+
+.composition__item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: rem(19px);
+  align-items: center;
+}
+
+.composition__img {
+  max-width: rem(35px);
+  max-height: rem(35px);
+  margin-right: rem(24px);
+}
+
+.composition__name {
+  font-weight: 500;
+  font-size: rem(16px);
+  color: #363636;
+}
+
+.composition__weight {
+  color: #373636;
+  margin-left: auto;
+}

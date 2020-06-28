@@ -9,6 +9,7 @@ $phones: 480px;
 $z-fixed-menu: 100;
 $advantages-item: 10;
 $z-menu--mobile: 200;
+$benefits-section-before: 1;
 
 // normalize
 @import './layout/normalize.css';
@@ -44,3 +45,6 @@ $z-menu--mobile: 200;
 @import './block/phone';
 @import './block/logo';
 @import './block/close';
+@import './block/sliders';
+@import './block/slider';
+@import './block/composition';

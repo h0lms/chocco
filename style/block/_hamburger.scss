@@ -24,7 +24,7 @@
 .hamburger--close {
   z-index: $z-menu--mobile;
   position: fixed;
-  
+
   & .hamburger__plank:nth-child(1) {
     opacity: 0;
   }

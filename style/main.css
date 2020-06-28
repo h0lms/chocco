@@ -647,8 +647,9 @@ footer {
 .benefits-section::before {
   content: url(./../img/decor/raspberry.png);
   position: absolute;
-  bottom: -4.4444444444rem;
+  bottom: -18%;
   left: 0;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
   .benefits-section::before {
@@ -1198,4 +1199,176 @@ footer {
   font-size: 1.9444444444rem;
   cursor: pointer;
   display: block;
+}
+
+.sliders-section {
+  background-color: #f8faf9;
+  position: relative;
+}
+.sliders-section::before {
+  content: url("../../img/decor/blueberries_and_leaf.png");
+  position: absolute;
+  right: 0;
+  bottom: -28%;
+}
+
+.sliders {
+  position: relative;
+}
+
+.sliders__arrow {
+  display: flex;
+  flex-shrink: 0;
+  position: absolute;
+  top: 49%;
+}
+
+.sliders__arrow-img {
+  width: 13px;
+  height: 28px;
+  fill: #151515;
+}
+
+.sliders__arrow--left {
+  left: -3%;
+}
+.sliders__arrow--left .sliders__arrow-img {
+  transform: rotate(180deg);
+}
+
+.sliders__arrow--right {
+  right: -3%;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__image {
+  width: 26.1111111111rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 3.6111111111rem;
+}
+
+.slider__features {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.6666666667rem;
+  padding-left: 0.2777777778rem;
+}
+
+.slider__feature {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.7777777778rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+  background-color: #60aacc;
+}
+.slider__feature:hover .slider__feature-list {
+  display: block;
+}
+
+.slider__feature-text {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.slider__feature-img {
+  height: 2.8333333333rem;
+  width: 2.8333333333rem;
+  fill: #fff;
+  margin-bottom: 0.2777777778rem;
+}
+
+.slider__title {
+  font-size: 2rem;
+  color: #000;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 1.3888888889rem;
+}
+
+.slider__description {
+  margin-bottom: 2.3333333333rem;
+}
+
+.slider__row {
+  display: flex;
+  margin-bottom: 2.1111111111rem;
+}
+
+.slider__col {
+  margin-right: 3.0555555556rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.slider__col:last-child {
+  margin-right: 0;
+}
+
+.slider__value {
+  font-weight: bold;
+  color: #000;
+}
+
+.slider__buy {
+  display: flex;
+  align-items: center;
+}
+
+.slider__price {
+  font-size: 3.3333333333rem;
+  font-weight: lighter;
+  color: #151515;
+  margin-right: 1.9444444444rem;
+}
+
+.slider__feature-list {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -270px;
+}
+
+.composition {
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 15rem;
+  border-radius: 5px;
+  border: solid 1px #eeeeee;
+  padding: 1.3333333333rem 1.1111111111rem 1.2777777778rem 1.7777777778rem;
+}
+
+.composition__item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.0555555556rem;
+  align-items: center;
+}
+
+.composition__img {
+  max-width: 1.9444444444rem;
+  max-height: 1.9444444444rem;
+  margin-right: 1.3333333333rem;
+}
+
+.composition__name {
+  font-weight: 500;
+  font-size: 0.8888888889rem;
+  color: #363636;
+}
+
+.composition__weight {
+  color: #373636;
+  margin-left: auto;
 }
