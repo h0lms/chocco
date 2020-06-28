@@ -20,3 +20,15 @@
   height: 4px;
   border-radius: 10px;
 }
+
+.hamburger--close {
+  & .hamburger__plank:nth-child(1) {
+    opacity: 0;
+  }
+  & .hamburger__plank:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  & .hamburger__plank:nth-child(3) {
+    transform: rotate(-45deg) translateY(-6px) translateX(5px);
+  }
+}
