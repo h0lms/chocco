@@ -11,6 +11,10 @@
   justify-content: flex-start;
   margin-bottom: rem(19px);
   align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .composition__img {

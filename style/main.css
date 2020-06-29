@@ -1428,6 +1428,9 @@ footer {
   margin-bottom: 1.0555555556rem;
   align-items: center;
 }
+.composition__item:last-child {
+  margin-bottom: 0;
+}
 
 .composition__img {
   max-width: 1.9444444444rem;
