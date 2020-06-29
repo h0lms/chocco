@@ -1,6 +1,11 @@
 .slider {
   display: flex;
   justify-content: space-between;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .slider__image {
@@ -10,6 +15,11 @@
   align-items: center;
   flex-shrink: 0;
   margin-right: rem(65px);
+
+  @include tablets {
+    width: rem(370px);
+    margin-right: 0;
+  }
 }
 
 .slider__features {
@@ -17,6 +27,10 @@
   justify-content: flex-start;
   margin-bottom: rem(30px);
   padding-left: rem(5px);
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .slider__feature {
@@ -55,16 +69,28 @@
   line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: rem(25px);
+  font-weight: bold;
+  
+  @include tablets {
+    font-size: rem(30px);
+    text-align: center;
+  }
 }
 
 .slider__block {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-start;
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .slider__description {
   margin-bottom: rem(42px);
+
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .slider__row {

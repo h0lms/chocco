@@ -1215,12 +1215,28 @@ footer {
 .sliders {
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .sliders {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
 
 .sliders__arrow {
   display: flex;
   flex-shrink: 0;
   position: absolute;
   top: 49%;
+}
+@media screen and (max-width: 768px) {
+  .sliders__arrow {
+    top: 22%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sliders__arrow {
+    top: 19%;
+  }
 }
 
 .sliders__arrow-img {
@@ -1232,6 +1248,16 @@ footer {
 .sliders__arrow--left {
   left: -3%;
 }
+@media screen and (max-width: 768px) {
+  .sliders__arrow--left {
+    left: 8%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sliders__arrow--left {
+    left: -15%;
+  }
+}
 .sliders__arrow--left .sliders__arrow-img {
   transform: rotate(180deg);
 }
@@ -1239,10 +1265,26 @@ footer {
 .sliders__arrow--right {
   right: -3%;
 }
+@media screen and (max-width: 768px) {
+  .sliders__arrow--right {
+    right: 8%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sliders__arrow--right {
+    right: -15%;
+  }
+}
 
 .slider {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .slider {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .slider__image {
@@ -1253,12 +1295,23 @@ footer {
   flex-shrink: 0;
   margin-right: 3.6111111111rem;
 }
+@media screen and (max-width: 768px) {
+  .slider__image {
+    width: 20.5555555556rem;
+    margin-right: 0;
+  }
+}
 
 .slider__features {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 1.6666666667rem;
   padding-left: 0.2777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .slider__features {
+    display: none;
+  }
 }
 
 .slider__feature {
@@ -1296,10 +1349,30 @@ footer {
   line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: 1.3888888889rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .slider__title {
+    font-size: 1.6666666667rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .slider__description {
   margin-bottom: 2.3333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .slider__description {
+    text-align: center;
+  }
 }
 
 .slider__row {

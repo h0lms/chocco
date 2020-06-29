@@ -12,6 +12,11 @@
 
 .sliders {
   position: relative;
+
+  @include tablets {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 
 .sliders__arrow {
@@ -19,6 +24,14 @@
   flex-shrink: 0;
   position: absolute;
   top: 49%;
+
+  @include tablets {
+    top: 22%;
+  }
+
+  @include phones {
+    top: 19%;
+  }
 }
 
 .sliders__arrow-img {
@@ -29,6 +42,15 @@
 
 .sliders__arrow--left {
   left: -3%;
+
+  @include tablets {
+    left: 8%;
+  }
+
+  @include phones {
+    left: -15%;
+  }
+
   & .sliders__arrow-img {
     transform: rotate(180deg);
   }
@@ -36,4 +58,12 @@
 
 .sliders__arrow--right {
   right: -3%;
+
+  @include tablets {
+    right: 8%;
+  }
+
+  @include phones {
+    right: -15%;
+  }
 }
