@@ -16,7 +16,7 @@
     height: rem(69px);
   }
 
-  &--active, &:hover {
+  &.active, &:hover {
     border-color: #365a49;
   }
 }

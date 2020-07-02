@@ -13,16 +13,12 @@
   object-position: center center;
 }
 
-.member__feature {
-  text-align: center;
-
-  & .member__function--active {
+  .member__content--active {
     color: #ffd800;
     &::after {
       transform: rotate(180deg) translateY(-6px);
     }
   }
-}
 
 .member__name {
   font-size: rem(21px);
@@ -30,6 +26,8 @@
   margin-bottom: rem(14px);
   font-weight: bold;
   position: relative;
+  background: none;
+  border: none;
   
   &:hover {
     cursor: pointer;
@@ -44,15 +42,28 @@
 
 }
 
-.member__function {
-  position: absolute;
-  display: none;
-  width: rem(220px);
-  // height: 0;
-  // overflow: hidden;
+.member__content {
+  height: 0;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.member__content-block {
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .member__position {
   color: #000;
   margin-bottom: rem(5px);
+}
+
+.member__motto {
+  font-weight: lighter;
+  @include tablets {
+    width: rem(270px);
+  }
 }

@@ -2,10 +2,36 @@
   display: flex;
 }
 
+.team--version--desktop {
+  & .member__content {
+    position: absolute;
+    top: 100%;
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.team--version--mobile {
+  display: none;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .team__member {
   margin-right: rem(20px);
+  position: relative;
+  text-align: center;
 
   &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
     margin-right: 0;
   }
 }
