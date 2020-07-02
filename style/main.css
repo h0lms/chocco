@@ -1448,3 +1448,77 @@ footer {
   color: #373636;
   margin-left: auto;
 }
+
+.team {
+  display: flex;
+}
+
+.team__member {
+  margin-right: 1.1111111111rem;
+}
+.team__member:last-child {
+  margin-right: 0;
+}
+
+.member__photo {
+  width: 12.2222222222rem;
+  height: 16rem;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  margin-bottom: 1.3333333333rem;
+}
+
+.member__pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.member__feature {
+  text-align: center;
+}
+.member__feature .member__function--active {
+  color: #ffd800;
+}
+.member__feature .member__function--active::after {
+  transform: rotate(180deg) translateY(-6px);
+}
+
+.member__name {
+  font-size: 1.1666666667rem;
+  color: #000;
+  margin-bottom: 0.7777777778rem;
+  font-weight: bold;
+  position: relative;
+}
+.member__name:hover {
+  cursor: pointer;
+  color: #ffd800;
+}
+.member__name::after {
+  margin-left: 0.2777777778rem;
+  content: url("../../img/icons/polygon.png");
+  display: inline-block;
+}
+
+.member__function {
+  position: absolute;
+  display: none;
+  width: 12.2222222222rem;
+}
+
+.member__position {
+  color: #000;
+  margin-bottom: 0.2777777778rem;
+}
+
+.team-section {
+  position: relative;
+}
+.team-section::before {
+  content: url("../../img/decor/beautiful_berry.png");
+  position: absolute;
+  left: 1%;
+  bottom: -7%;
+}

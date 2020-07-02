@@ -1,0 +1,10 @@
+.team-section {
+  position: relative;
+
+  &::before{
+    content: url("../../img/decor/beautiful_berry.png");
+    position: absolute;
+    left: 1%;
+    bottom: -7%;
+  }
+}
