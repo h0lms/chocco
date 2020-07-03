@@ -1312,7 +1312,7 @@ footer {
 }
 
 .slider__image {
-  width: 26.1111111111rem;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
