@@ -1483,7 +1483,9 @@ footer {
 }
 .team--version--desktop .team__member {
   width: 25%;
-  overflow: hidden;
+}
+.team--version--desktop .member__photo {
+  width: auto;
 }
 @media screen and (max-width: 768px) {
   .team--version--desktop {

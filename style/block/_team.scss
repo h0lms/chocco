@@ -10,7 +10,10 @@
 
   & .team__member {
     width: 25%;
-    overflow: hidden;
+  }
+
+  & .member__photo {
+    width: auto;
   }
 
   @include tablets {
