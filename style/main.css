@@ -1321,8 +1321,13 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .slider__image {
-    width: 20.5555555556rem;
+    width: 70%;
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__image {
+    width: 100%;
   }
 }
 
