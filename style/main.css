@@ -1267,6 +1267,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .sliders__arrow--left {
+    z-index: 10;
     left: 8%;
   }
 }
@@ -1479,6 +1480,10 @@ footer {
 .team--version--desktop .member__content {
   position: absolute;
   top: 100%;
+}
+.team--version--desktop .team__member {
+  width: 25%;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .team--version--desktop {

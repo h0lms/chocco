@@ -42,8 +42,9 @@
 
 .sliders__arrow--left {
   left: -3%;
-
+  
   @include tablets {
+    z-index: 10;
     left: 8%;
   }
 
