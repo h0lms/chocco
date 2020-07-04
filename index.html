@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Натуральные шоколадные батончики</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">  
   <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
@@ -837,42 +838,43 @@
           <h2 class="section__title order-title">Закажите доставку</h2>
 
           <form class="form">
+            <input type="hidden" name="to" value="somehere@mail.com">
             <div class="form__col">
 
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="name" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="phone" class="form__input">
                 </label>
               </div>
               
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Улица</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="street" class="form__input">
                 </label>
               </div>
 
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Дом</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="home" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Корпус</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="part" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Квартира</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="appartment" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Этаж</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="floor" class="form__input">
                 </label>
               </div>
 
@@ -882,7 +884,7 @@
               <div class="form__row form__row--textarea">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea name="comment" class="form__input form__input--textarea"></textarea>
                 </label>
               </div>
               
@@ -980,50 +982,61 @@
     </div>
   </div>
 
-<nav class="fixed-menu">
-  <ul class="fixed-menu__list">
-    <li class="fixed-menu__item fixed-menu__item--active">
-      <a href="" class="fixed-menu__link"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="" class="fixed-menu__link"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="" class="fixed-menu__link"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="" class="fixed-menu__link"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="" class="fixed-menu__link"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="" class="fixed-menu__link"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="" class="fixed-menu__link"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="" class="fixed-menu__link"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="" class="fixed-menu__link"></a>
-    </li>
-  </ul>
-</nav>
+  <nav class="fixed-menu">
+    <ul class="fixed-menu__list">
+      <li class="fixed-menu__item fixed-menu__item--active">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+    </ul>
+  </nav>
 
-<a class="hamburger">
-  <div class="hamburger__plank"></div>
-  <div class="hamburger__plank"></div>
-  <div class="hamburger__plank"></div>
-</a>
+  <a class="hamburger">
+    <div class="hamburger__plank"></div>
+    <div class="hamburger__plank"></div>
+    <div class="hamburger__plank"></div>
+  </a>
+
+  <div class="modal" id="modal">
+    <div class="modal__container">
+      <div class="modal__content">Сообщение отправлено</div>
+      <div class="modal__buttons-container">
+        <a href="#" class="btn app-close-modal btn--green">Закрыть</a>
+      </div>
+    </div>
+  </div>
 
 <script src="./js/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="./js/menu.js"></script>
 <script src="./js/accordion.js"></script>
 <script src="./js/tabs.js"></script>
 <script src="./js/slider.js"></script>
+<script src="./js/modal.js"></script>
 
 </body>
 </html>
