@@ -897,6 +897,9 @@ footer {
   width: 100%;
   color: #000;
 }
+.form__input.input-eror {
+  border-color: hotpink;
+}
 @media screen and (max-width: 768px) {
   .form__input {
     padding: 0.3333333333rem 0.3333333333rem;

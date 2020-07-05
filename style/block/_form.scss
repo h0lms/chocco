@@ -68,6 +68,10 @@
   width: 100%;
   color: #000;
 
+  &.input-eror {
+    border-color: hotpink;
+  }
+
   @include tablets {
     padding: rem(6px) rem(6px);
     font-size: rem(16px);
