@@ -1648,7 +1648,7 @@ footer {
 }
 
 .recipes-section {
-  background-image: url("../../img/menu/menu-bg.jpg");
+  background-image: url("./../img/menu/menu-bg.jpg");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1681,13 +1681,13 @@ footer {
   width: 5.5555555556rem;
 }
 .recipes__wrap--milk {
-  background-image: url("../../img/menu/menu-slide-1.jpg");
+  background-image: url("./../img/menu/menu-slide-1.jpg");
 }
 .recipes__wrap--honey {
-  background-image: url("../../img/menu/menu-slide-2.jpg");
+  background-image: url("./../img/menu/menu-slide-2.jpg");
 }
 .recipes__wrap--berries {
-  background-image: url("../../img/menu/menu-slide-3.jpg");
+  background-image: url("./../img/menu/menu-slide-3.jpg");
 }
 
 .recipes__name {
@@ -1744,7 +1744,7 @@ footer {
 }
 
 .player__start {
-  background: url(../../img/icons/play-gray.png) center center/cover no-repeat;
+  background: url(./../img/icons/play-gray.png) center center/cover no-repeat;
   border: none;
   width: 16px;
   height: 22px;
@@ -1761,7 +1761,7 @@ footer {
   right: 0;
   bottom: 0;
   cursor: pointer;
-  background: url(../../img/wrap-video.jpg) center center/cover no-repeat;
+  background: url(./../img/wrap-video.jpg) center center/cover no-repeat;
 }
 .player__splash::before {
   content: "";
@@ -1774,7 +1774,7 @@ footer {
   top: 0;
   bottom: 0;
   margin: auto;
-  background: url(../../img/icons/Play-white.png) center center no-repeat;
+  background: url(./../img/icons/Play-white.png) center center no-repeat;
 }
 
 .player__controls {
@@ -1823,11 +1823,11 @@ footer {
 }
 
 .player-section {
-  background: url(../../img/decor/leaf-right.png) top 5% right 3% no-repeat, #f8faf9 url(../../img/decor/leaf-left.png) bottom 5% left 5% no-repeat;
+  background: url(./../img/decor/leaf-right.png) top 5% right 3% no-repeat, #f8faf9 url(./../img/decor/leaf-left.png) bottom 5% left 5% no-repeat;
   position: relative;
 }
 .player-section::before {
-  content: url("../../img/decor/blackberry-video.png");
+  content: url("./../img/decor/blackberry-video.png");
   display: block;
   position: absolute;
   right: 0;

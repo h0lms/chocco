@@ -1,10 +1,10 @@
 .player-section {
-  background: url(../../img/decor/leaf-right.png) top 5% right 3% no-repeat,
-  #f8faf9 url(../../img/decor/leaf-left.png) bottom 5% left 5% no-repeat;
+  background: url(./../img/decor/leaf-right.png) top 5% right 3% no-repeat,
+  #f8faf9 url(./../img/decor/leaf-left.png) bottom 5% left 5% no-repeat;
   position: relative;
 
   &::before {
-    content: url("../../img/decor/blackberry-video.png");
+    content: url("./../img/decor/blackberry-video.png");
     display: block;
     position: absolute;
     right: 0;
