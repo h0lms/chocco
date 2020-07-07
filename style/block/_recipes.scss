@@ -1,0 +1,60 @@
+.recipes {
+  display: flex;
+}
+
+.recipes__item {
+  position: relative;
+  flex: auto;
+  display: flex;
+
+  &.active {
+    & .recipes__description {
+      width: rem(430px);
+      display: flex;
+
+      & .recipes__wrap {
+        opacity: .4;
+        background-color: #000000;
+      }
+    }
+  }
+}
+
+.recipes__wrap {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(100px);
+
+  &--milk {
+    background-image: url('../../img/menu/menu-slide-1.jpg');
+  }
+  &--honey {
+    background-image: url('../../img/menu/menu-slide-2.jpg');
+  }
+  &--berries {
+    background-image: url('../../img/menu/menu-slide-3.jpg');
+  }
+}
+
+.recipes__name {
+  transform: rotate(-90deg);
+  position: relative;
+  right: 10%;
+  top: 85%;
+  white-space: nowrap;
+  font-size: rem(48px);
+  font-weight: bold;
+}
+
+.recipes__description {
+  width: 0px;
+  font-size: rem(16px);
+  opacity: 0.93;
+  background-color: #333537;
+  font-size: 16px;
+}
+
+.recipes__text {
+  padding: (50px) rem(27px);
+}

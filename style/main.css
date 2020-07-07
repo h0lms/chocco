@@ -1602,6 +1602,7 @@ footer {
   position: absolute;
   left: 1%;
   bottom: -7%;
+  z-index: 1;
 }
 
 .modal {
@@ -1628,4 +1629,84 @@ footer {
 .modal__content {
   margin-bottom: 15px;
   color: #000;
+}
+
+.recipes-container {
+  width: 100%;
+  min-width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+.recipes-container .section__title {
+  color: #fff;
+  left: 7%;
+  top: 15%;
+  position: absolute;
+}
+
+.recipes-section {
+  background-image: url("../../img/menu/menu-bg.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+}
+
+.recipes {
+  display: flex;
+}
+
+.recipes__item {
+  position: relative;
+  flex: auto;
+  display: flex;
+}
+.recipes__item.active .recipes__description {
+  width: 23.8888888889rem;
+  display: flex;
+}
+.recipes__item.active .recipes__description .recipes__wrap {
+  opacity: 0.4;
+  background-color: #000000;
+}
+
+.recipes__wrap {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5.5555555556rem;
+}
+.recipes__wrap--milk {
+  background-image: url("../../img/menu/menu-slide-1.jpg");
+}
+.recipes__wrap--honey {
+  background-image: url("../../img/menu/menu-slide-2.jpg");
+}
+.recipes__wrap--berries {
+  background-image: url("../../img/menu/menu-slide-3.jpg");
+}
+
+.recipes__name {
+  transform: rotate(-90deg);
+  position: relative;
+  right: 10%;
+  top: 85%;
+  white-space: nowrap;
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+}
+
+.recipes__description {
+  width: 0px;
+  font-size: 0.8888888889rem;
+  opacity: 0.93;
+  background-color: #333537;
+  font-size: 16px;
+}
+
+.recipes__text {
+  padding: 50px 1.5rem;
 }
