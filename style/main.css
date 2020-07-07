@@ -819,6 +819,7 @@ footer {
   position: absolute;
   bottom: -9.1111111111rem;
   left: 0;
+  z-index: 1;
 }
 
 .order-section {
@@ -1709,4 +1710,132 @@ footer {
 
 .recipes__text {
   padding: 50px 1.5rem;
+}
+
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.player.paused .player__start {
+  width: 14px;
+  height: 22px;
+  border: none;
+  background-image: none;
+}
+.player.paused .player__start::after, .player.paused .player__start::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  background: #626262;
+}
+.player.paused .player__start::after {
+  right: 0;
+}
+.player.paused .player__start::before {
+  left: 0;
+}
+.player.active .player__splash {
+  display: none;
+}
+
+.player__start {
+  background: url(../../img/icons/play-gray.png) center center/cover no-repeat;
+  border: none;
+  width: 16px;
+  height: 22px;
+  position: relative;
+}
+.player__start:focus {
+  outline: none;
+}
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background: url(../../img/wrap-video.jpg) center center/cover no-repeat;
+}
+.player__splash::before {
+  content: "";
+  width: 82px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url(../../img/icons/Play-white.png) center center no-repeat;
+}
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #3e3e3e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 25px;
+}
+
+.player__playback {
+  height: 16px;
+  width: 446px;
+  position: relative;
+}
+.player__playback::before {
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: #626262;
+  display: block;
+  transform: translateY(-50%);
+}
+
+.player__playback-button {
+  background: #626262;
+  border-radius: 50px;
+  border: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+.player__playback-button:focus {
+  outline: none;
+}
+
+.player-section {
+  background: url(../../img/decor/leaf-right.png) top 5% right 3% no-repeat, #f8faf9 url(../../img/decor/leaf-left.png) bottom 5% left 5% no-repeat;
+  position: relative;
+}
+.player-section::before {
+  content: url("../../img/decor/blackberry-video.png");
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -14%;
+}
+
+.player-section__container {
+  height: 405px;
+  width: 660px;
+  margin: 0 auto;
 }
