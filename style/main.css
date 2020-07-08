@@ -1149,14 +1149,9 @@ footer {
   }
 }
 
-.map {
+#map {
   width: 100vw;
   height: 100vh;
-}
-
-.map__img {
-  height: 100%;
-  object-fit: cover;
 }
 
 .social {
