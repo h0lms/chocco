@@ -11,7 +11,7 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="hero">
+      <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
         <div class="container container--hero">
           <header class="header">
             <a href="/" class="logo">
@@ -20,25 +20,25 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+                  <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Батончики</a>
+                  <a href="#" data-scroll-to="sliders" class="menu__link">Батончики</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Команда</a>
+                  <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Меню</a>
+                  <a href="#" data-scroll-to="recipes" class="menu__link">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Как мы работаем</a>
+                  <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты</a>
+                  <a href="#" data-scroll-to="map" class="menu__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -52,7 +52,7 @@
           <div class="hero__block hero__block--mobile">
             <h1 class="hero__title">натуральные шоколадные батончики</h1>
             <div class="hero__motto"><p>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p></div>
-            <a href="#" class="btn btn--wite">Заказать</a>
+            <a href="#" data-scroll-to="order" class="btn btn--wite">Заказать</a>
           </div>
           <ul class="hero__block advantages">
             <li class="advantages__item">
@@ -77,7 +77,7 @@
         </div>
       </section>
 
-      <section class="section benefits-section">
+      <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits-section">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Почему chocco?</h2>
@@ -128,7 +128,7 @@
         </div>
       </section>
 
-      <section class="section sliders-section">
+      <section data-sidemenu-theme="black" data-section-id="sliders" class="section sliders-section">
         <div class="container">
           <div class="sliders">
             <a href="#" class="sliders__arrow sliders__arrow--left">
@@ -642,7 +642,7 @@
         </div>
       </section>
 
-      <section class="section team-section">
+      <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
         <div class="container">
           <h2 class="section__title">Команда</h2>
           <ul class="team team--version--desktop">
@@ -764,7 +764,7 @@
         </div>
       </section>
 
-      <section class="section recipes-section">
+      <section data-sidemenu-theme="white" data-section-id="recipes" class="section recipes-section">
         <div class="container recipes-container">
           <h2 class="section__title">Меню</h2>
           <ul class="recipes">
@@ -820,7 +820,7 @@
         </div>
       </section>
 
-      <section class="section reviews-section">
+      <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
         <div class="container">
           <h2 class="section__title reviews-title">Отзывы</h2>
           
@@ -890,7 +890,7 @@
         </div>
       </section>
 
-      <section class="section player-section">
+      <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
         <div class="container">
           <h2 class="section__title section-title">Как мы работаем</h2>
           <div class="player-section__container">
@@ -914,7 +914,7 @@
         </div>
       </section>
 
-      <section class="section order-section">
+      <section data-sidemenu-theme="black" data-section-id="order" class="section order-section">
         <div class="container">
           <h2 class="section__title order-title">Закажите доставку</h2>
 
@@ -1001,60 +1001,63 @@
         </div>
       </section>
 
-      <section class="section map-section">
+      <section data-sidemenu-theme="black" data-section-id="map" class="section map-section">
         <div class="container container--map">
           <div id="map"></div>
         </div>
-      </section>
 
-      <footer class="footer">
+        <footer class="footer">
 
-        <div class="container container--footer">
-          
-          <div class="footer__block">
-            <div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div>
-            <address class="phone">
-              <svg class="phone__img">
-                <use xlink:href="./img/icons/sprite.svg#phone"></use>
-              </svg>
-              <a href="tel:+788009039090" class="phone__number">8 800 903 90 90</a>
-            </address>
+          <div class="container container--footer">
+            
+            <div class="footer__block">
+              <div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div>
+              <address class="phone">
+                <svg class="phone__img">
+                  <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                </svg>
+                <a href="tel:+788009039090" class="phone__number">8 800 903 90 90</a>
+              </address>
+            </div>
+    
+            <ul class="social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__img">
+                    <use xlink:href="./img/icons/sprite.svg#vk-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__img">
+                    <use xlink:href="./img/icons/sprite.svg#f-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__img">
+                    <use xlink:href="./img/icons/sprite.svg#in-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__img">
+                    <use xlink:href="./img/icons/sprite.svg#tv-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+  
           </div>
   
-          <ul class="social">
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__img">
-                  <use xlink:href="./img/icons/sprite.svg#vk-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__img">
-                  <use xlink:href="./img/icons/sprite.svg#f-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__img">
-                  <use xlink:href="./img/icons/sprite.svg#in-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__img">
-                  <use xlink:href="./img/icons/sprite.svg#tv-icon"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        </footer>
 
-        </div>
+      </section>
 
-      </footer>
+
 
     </div>
   </div>
@@ -1062,31 +1065,31 @@
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="hero" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="benefits" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="sliders" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="team" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="recipes" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="reviews" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="player" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="order" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="map" class="fixed-menu__link"></a>
       </li>
     </ul>
   </nav>

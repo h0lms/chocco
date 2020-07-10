@@ -5,6 +5,24 @@
   z-index: $z-fixed-menu;
 }
 
+.fixed-menu--shadowed {
+  .fixed-menu__item {
+    &--active {
+      .fixed-menu__link {
+        border-color: #000000;
+      }
+    }
+  }
+  .fixed-menu__link {
+    &::before{
+      background-color: #000000;
+    }
+    &:hover {
+      border-color: #000000;
+    }
+  }
+}
+
 .fixed-menu__item {
   margin-bottom: rem(5px);
 
