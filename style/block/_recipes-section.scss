@@ -1,8 +1,5 @@
 .recipes-section {
-  background-image: url("./../img/menu/menu-bg.jpg");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #000000;
+  background: #000000 url(./../img/menu/menu-bg.jpg) center center/cover no-repeat;
   position: relative;
+  color: #fff;
 }

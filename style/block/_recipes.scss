@@ -1,18 +1,22 @@
 .recipes {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
 }
 
 .recipes__item {
   position: relative;
-  flex: auto;
+  // flex: auto;
   display: flex;
 
   &.active {
     & .recipes__description {
-      width: rem(430px);
-      display: flex;
+      width: rem(530px);
+      // display: flex;
 
-      & .recipes__wrap {
+      & .recipes__title {
         opacity: .4;
         background-color: #000000;
       }
@@ -20,11 +24,12 @@
   }
 }
 
-.recipes__wrap {
+.recipes__title {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   width: rem(100px);
+  text-decoration: none;
 
   &--milk {
     background-image: url('./../img/menu/menu-slide-1.jpg');
@@ -49,12 +54,28 @@
 
 .recipes__description {
   width: 0px;
+  transition: width .7s;
+  overflow: hidden;
+  background-color: rgba(47, 50, 52, 0.9);
   font-size: rem(16px);
-  opacity: 0.93;
-  background-color: #333537;
-  font-size: 16px;
 }
 
-.recipes__text {
-  padding: (50px) rem(27px);
+.recipes__container {
+  padding: rem(50px) rem(75px) rem(50px) rem(27px);
+  position: relative;
+}
+
+.recipes__close {
+  position: absolute;
+  top: rem(20px);
+  right: rem(25px);
+  border: none;
+  background: transparent;
+}
+
+.recipes__close-img {
+  fill: #ffffff;
+  opacity: 0.7;
+  width: 18px;
+  height: 18px;
 }

@@ -1,40 +1,66 @@
-const openItem1 = item => {
-  const container1 = item.closest(".recipes__item");
-  const contentBlock1 = container1.find(".recipes__description");
-  // const textBlock = contentBlock.find(".member__content-block");
-  const reqHeight1 = contentBlock1.width();
-  
-  container1.addClass("active").width(reqHeight1);
-}
+const mesureWidth = item => {
+  let reqItemWidth = 0;
 
-const closeEveryItem1 = container1 => {
-  const items1 = container1.find('.recipes__description');
-  const itemContainer1 = container1.find(".recipes__item");
+  const screenWidth = $(window).width();
+  const container = item.closest(".recipes");
+  const titlesBlocks = container.find(".recipes__title");
+  const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
 
-  itemContainer1.removeClass("active");
-  items1.width(0);
-}
+  const textContainer = item.find(".recipes__container");
+  const paddingLeft = parseInt(textContainer.css("padding-left"));
+  const paddingRight = parseInt(textContainer.css("padding-right"));
 
-$('.member__name').click(e => {
-  const $this1 = $(e.currentTarget);
-  const container1 = $this1.closest('.recipes');
-  const elemContainer1 = $this1.closest(".recipes__item");
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-  if (elemContainer1.hasClass("active")) {
-    closeEveryItem1(container1);
+  if (isMobile) {
+    reqItemWidth = screenWidth - titlesWidth;
   } else {
-    closeEveryItem1(container1);
-    openItem1($this1);
+    reqItemWidth = 500;
   }
 
-})
+  return {
+    container: reqItemWidth,
+    textContainer: reqItemWidth - paddingLeft - paddingRight
+  }
+};
 
+const closeEveryItemInContainer = (container) => {
+  const items = container.find(".recipes__item");
+  const content = container.find(".recipes__description");
 
+  items.removeClass("active"); 
+  content.width(0);
+};
 
-// $(document).ready(() => {
-//   $('.member__name').on('click', function(e) {
-//     let member = $(e.currentTarget).next();
-//     $(this).toggleClass('member__function--active');
-//     member.slideToggle();
-//   })
-// });
+const openItemAccord = (item) => {
+  const hiddenContent = item.find(".recipes__description");
+  const reqWidth = mesureWidth(item);
+  const textBlock = item.find(".recipes__container");
+
+  item.addClass("active");
+  hiddenContent.width(reqWidth.container);
+  textBlock.width(reqWidth.textContainer);
+};
+
+$(".recipes__title").on("click", (e) => {
+   e.preventDefault();
+
+   const $this = $(e.currentTarget);
+   const item = $this.closest(".recipes__item");
+   const itemOpened = item.hasClass("active");
+   const container = $this.closest(".recipes");
+
+   if (itemOpened) {
+    closeEveryItemInContainer(container)
+  } else {
+    closeEveryItemInContainer(container)
+    openItemAccord(item);
+   }
+
+});
+
+$(".recipes__close").on("click", e => {
+  e.preventDefault();
+
+  closeEveryItemInContainer($('.recipes'));
+});
