@@ -1741,121 +1741,15 @@ footer {
   height: 18px;
 }
 
-.player {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.player.paused .player__start {
-  width: 14px;
-  height: 22px;
-  border: none;
-  background-image: none;
-}
-.player.paused .player__start::after, .player.paused .player__start::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 5px;
-  top: 0;
-  bottom: 0;
-  background: #626262;
-}
-.player.paused .player__start::after {
-  right: 0;
-}
-.player.paused .player__start::before {
-  left: 0;
-}
-.player.active .player__splash {
-  display: none;
-}
-
-.player__start {
-  background: url(./../img/icons/play-gray.png) center center/cover no-repeat;
-  border: none;
-  width: 16px;
-  height: 22px;
-  position: relative;
-}
-.player__start:focus {
-  outline: none;
-}
-
-.player__splash {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  cursor: pointer;
-  background: url(./../img/wrap-video.jpg) center center/cover no-repeat;
-}
-.player__splash::before {
-  content: "";
-  width: 82px;
-  height: 118px;
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: url(./../img/icons/Play-white.png) center center no-repeat;
-}
-
-.player__controls {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #3e3e3e;
+.video {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 25px;
-}
-
-.player__playback {
-  height: 16px;
-  width: 446px;
-  position: relative;
-}
-.player__playback::before {
-  content: "";
-  height: 4px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  background: #626262;
-  display: block;
-  transform: translateY(-50%);
-}
-
-.player__playback-button {
-  background: #626262;
-  border-radius: 50px;
-  border: none;
-  width: 12px;
-  height: 12px;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 0;
-}
-.player__playback-button:focus {
-  outline: none;
-}
-
-.player-section {
+  justify-content: center;
   background: url(./../img/decor/leaf-right.png) top 5% right 3% no-repeat, #f8faf9 url(./../img/decor/leaf-left.png) bottom 5% left 5% no-repeat;
   position: relative;
 }
-.player-section::before {
+.video::before {
   content: url("./../img/decor/blackberry-video.png");
   display: block;
   position: absolute;
@@ -1863,8 +1757,105 @@ footer {
   bottom: -14%;
 }
 
-.player-section__container {
-  height: 405px;
-  width: 660px;
-  margin: 0 auto;
+.video__container {
+  height: 100vh;
+  width: 80%;
+  max-width: 36.6111111111rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.video__player {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#video {
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  visibility: visible;
+  width: 4.5555555556rem;
+}
+.video__play.video__play--active {
+  visibility: hidden;
+}
+
+.video__toolbar {
+  height: 35px;
+  width: 100%;
+  display: flex;
+  background: #3e3e3e;
+  padding: 6px 20px;
+}
+
+.duration {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.duration__length {
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  background: #626262;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  outline: none;
+}
+
+.duration__length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #626262;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.duration__length--other {
+  width: 58px;
+  height: 4px;
+}
+
+.duration__icon {
+  width: 16px;
+}
+
+.duration__icon, .sound__img {
+  height: 22px;
+  cursor: pointer;
+  margin-right: 19px;
+}
+
+.sound {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.sound__volume {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.sound__img {
+  width: 18px;
 }

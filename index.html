@@ -890,29 +890,26 @@
         </div>
       </section>
 
-      <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
-        <div class="container">
-          <h2 class="section__title section-title">Как мы работаем</h2>
-          <div class="player-section__container">
-            <div class="player">
-              <!-- <div class="player__wrapper">
-                <div id="yt-player" class="player__elem"></div>
-                <div class="player__splash"></div>
-              </div> -->
-              <video width="660" height="370" poster="./img/wrap-video.jpg" class="player__video">
-                <source src="./video/videoplayback.mp4" type="video/mp4">
+      <section data-sidemenu-theme="black" data-section-id="player" class="section video">
+        <div class="container video__container">
+          <h2 class="section__title">Как мы работаем</h2>
+          <div class="video__player">
+              <video id="video" poster="./img/wrap-video.jpg">
+                  <source src="./video/videoplayback.mp4" type="video/mp4">
               </video>
-              <div class="player__controls">
-                <button class="player__start"></button>
-                <div class="player__playback">
-                  <button class="player__playback-button"></button>
-                </div>
-                <div class="player__duration">
-                  <span class="player__duration-completed">00:00</span> : 
-                  <span class="player__duration-estimate">00:00</span>
-                </div>
+              <img src="./img/icons/Play-white.png" alt="Icon" class="play video__play">
+          </div>
+          <div class="video__toolbar">
+              <div class="duration">
+                  <img src="./img/icons/play-gray.png" alt="Icon" class="duration__icon play">
+                  <input type="range" class="duration__length" id="durationLevel" min="0">
               </div>
-            </div>
+              <div class="sound">
+                  <img src="./img/icons/volum_gray.png" alt="Icon" class="sound__img" id="micLevel">
+                  <div class="sound__volume">
+                      <input type="range" class="duration__length duration__length--other" id="volumeLevel" min="0" max="10">
+                  </div>
+              </div>
           </div>
         </div>
       </section>
@@ -1125,7 +1122,6 @@
 <script src="./js/modal.js"></script>
 <script src="./js/accord-menu.js"></script>
 <script src="https://www.youtube.com/iframe_api"></script>
-<!-- <script src="./js/player.js"></script> -->
 <script src="./js/video.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
