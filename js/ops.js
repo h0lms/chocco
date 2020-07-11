@@ -102,11 +102,11 @@ $(window).on("wheel", (e) => {
 
   switch (e.keyCode) {
     case 38:
-        scroller("prev");
+        scroller.prev();
       break;
       
     case 40:
-        scroller("next");
+        scroller.next();
         break;
     }
  });
