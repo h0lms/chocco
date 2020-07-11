@@ -246,7 +246,7 @@ footer {
   color: #ffffff;
   padding-top: 1.3333333333rem;
   padding-bottom: 2.5rem;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   position: relative;
 }
@@ -498,7 +498,7 @@ footer {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
