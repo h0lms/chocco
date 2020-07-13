@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'alegreya';
+    src: url('alegreyasans-bold-webfont.woff2') format('woff2'),
+         url('alegreyasans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya';
+    src: url('alegreyasans-bolditalic-webfont.woff2') format('woff2'),
+         url('alegreyasans-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'alegreya';
+    src: url('alegreyasans-extrabold-webfont.woff2') format('woff2'),
+         url('alegreyasans-extrabold-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya';
+    src: url('alegreyasans-extrabolditalic-webfont.woff2') format('woff2'),
+         url('alegreyasans-extrabolditalic-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'alegreya';
+    src: url('alegreyasans-italic-webfont.woff2') format('woff2'),
+         url('alegreyasans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'alegreya';
+    src: url('alegreyasans-light-webfont.woff2') format('woff2'),
+         url('alegreyasans-light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya';
+    src: url('alegreyasans-lightitalic-webfont.woff2') format('woff2'),
+         url('alegreyasans-lightitalic-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'alegreya';
+    src: url('alegreyasans-medium-webfont.woff2') format('woff2'),
+         url('alegreyasans-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya';
+    src: url('alegreyasans-mediumitalic-webfont.woff2') format('woff2'),
+         url('alegreyasans-mediumitalic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'alegreya';
+    src: url('alegreyasans-regular-webfont.woff2') format('woff2'),
+         url('alegreyasans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
