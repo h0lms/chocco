@@ -47,7 +47,7 @@ task('styles', () => {
    .pipe(gulpif(env === 'prod', gcmq()))
    .pipe(gulpif(env === 'prod', cleanCSS()))
    .pipe(gulpif(env === 'dev', sourcemaps.write()))
-   .pipe(dest(DIST_PATH))
+   .pipe(dest(`${DIST_PATH}/styles/`))
    .pipe(reload({ stream: true }));
 });
  
