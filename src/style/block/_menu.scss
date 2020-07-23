@@ -46,6 +46,10 @@
   margin: 0;
   padding: 0;
 
+  &.menu {
+    display: flex;
+  }
+
   & .menu__list {
     flex-direction: column;
   }
