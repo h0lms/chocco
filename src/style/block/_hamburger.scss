@@ -19,6 +19,13 @@
   background: #ffffff;
   height: 4px;
   border-radius: 10px;
+
+  .hamburger--color--black & {
+    background: black;;
+  }
+  .hamburger--close & {
+    background: white;;
+  }
 }
 
 .hamburger--close {

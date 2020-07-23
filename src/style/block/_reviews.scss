@@ -37,8 +37,6 @@
   opacity: 0;
   
   
-
-
   @include tablets {
     display: flex;
     flex-direction: column;
@@ -53,8 +51,6 @@
   @include phones {
     margin-bottom: rem(30px);
   }
-
-
 
   &.active{
     position: relative;

@@ -1,6 +1,7 @@
 const sections = $("section");
 const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
+const hamburgerColor = $(".hamburger");
 const menuItems = sideMenu.find(".fixed-menu__item");
 
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
@@ -25,11 +26,14 @@ const chageMenuThemeForSection = (sectionEq) => {
   const currentSection = sections.eq(sectionEq);
   const menuTheme = currentSection.attr("data-sidemenu-theme");
   const activeClass = "fixed-menu--shadowed";
+  const hamburgerBlack = "hamburger--color--black";
 
   if (menuTheme == "black") {
     sideMenu.addClass(activeClass);
+    hamburgerColor.addClass(hamburgerBlack);
   } else {
     sideMenu.removeClass(activeClass);
+    hamburgerColor.removeClass(hamburgerBlack);
   }
 };
 

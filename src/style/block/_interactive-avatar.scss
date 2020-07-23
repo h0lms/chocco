@@ -5,6 +5,7 @@
   background-color: #eeeeee;
   overflow: hidden;
   border-radius: 50%;
+  z-index: $z-interactive-avatar;
   
   @include tablets {
     width: rem(75px);

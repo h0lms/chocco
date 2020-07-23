@@ -41,5 +41,9 @@
 
   @include tablets {
     margin-right: 0;
+
+    &.active {
+      margin-bottom: rem(10px);
+    }
   }
 }
